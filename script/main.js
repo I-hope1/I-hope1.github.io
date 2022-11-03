@@ -40,5 +40,6 @@ input#left-tab${i}:checked~.left label.tab${i} {
 input#left-tab${i}:checked~.left label.tab${i} i::after {
 	background-color: skyblue;
 	animation: i-show .1s forwards;
-}`).join('')
+}
+`).join('')
 document.head.appendChild(style);
