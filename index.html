@@ -6,36 +6,48 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="style.css" >
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/TabSwitch.css">
+
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.15.10/index.js"></script>
 </head>
 
 <body>
-	<div id="main">
-		<card realname="鲁智深" nickname="花和尚"
-			weapons="六十二斤水磨镔铁禅杖、戒刀"
-			force="很强" ranking="13" content="上山原因：开始是为弱者打抱不平：听到隔壁有女子哭泣，了解到是被镇关西强娶后抛弃，后来上山。
+	<div class="main">
+		<input type='radio' name='left-tab' id='left-tab1' checked />
+		<input type='radio' name='left-tab' id='left-tab2' />
+		<input type='radio' name='left-tab' id='left-tab3' />
+		<div class='left'>
+			<h1>主页</h1>
+			<label class='tab1' for='left-tab1'><span>鲁智深</span><i></i></label>
+			<label class='tab2' for='left-tab2'><span>林冲</span><i></i></label>
+			<label class='tab3' for='left-tab3'><span>btn3</span><i></i></label>
+		</div>
+		<div class='separate'></div>
+		<div id='content' class='content'>
+			<div class='cont1'>
+				<card realname="鲁智深" nickname="花和尚" weapons="六十二斤水磨镔铁禅杖、戒刀" force="很强" ranking="13" content="上山原因：开始是为弱者打抱不平：听到隔壁有女子哭泣，了解到是被镇关西强娶后抛弃，后来上山。
 
 后因酒醉大闹僧堂安身不牢，长老只能让他去东京大相国寺讨出生。
 
-三山聚义大战后呼延灼后，上梁山。"
-			ending="在家圆寂" character="讲义气，有勇有谋，见义勇为，疾恶如仇，粗中有细，敢作敢当，力大艺高"
-			plots="拳打镇关西，大闹五台山，倒拔垂杨柳，大闹野猪林"
-			></card>
-		<card realname="林冲" nickname="豹子头"
-			weapons="丈八蛇矛、花枪"
-			force="特别强" ranking="6" content="林冲误入白虎堂——单刀直入
+三山聚义大战后呼延灼后，上梁山。" ending="在家圆寂" character="讲义气，有勇有谋，见义勇为，疾恶如仇，粗中有细，敢作敢当，力大艺高" plots="拳打镇关西，大闹五台山，倒拔垂杨柳，大闹野猪林"></card>
+			</div>
+			<div class='cont2'>
+				<card realname="林冲" nickname="豹子头" weapons="丈八蛇矛、花枪" force="特别强" ranking="6" content="林冲误入白虎堂——单刀直入
 林冲到了野猪林——绝处逢生
 林冲看守草料场——英雄无用武之地
 林冲上山—— 官逼民反
-林冲落草——逼上梁山"
-			ending="病故，追封忠武郎。" character="忍气吞声，做事谨慎，耿直，机智勇敢，侠义"
-			plots="衙内结仇，误入白虎堂，野猪林被救，棒打洪教头，风雪山神庙，火并王伦，梁山聚义，南征北战"
-			></card>
+林冲落草——逼上梁山" ending="病故，追封忠武郎。" character="忍气吞声，做事谨慎，耿直，机智勇敢，侠义" plots="衙内结仇，误入白虎堂，野猪林被救，棒打洪教头，风雪山神庙，火并王伦，梁山聚义，南征北战">
+				</card>
+			</div>
+			<div class='cont3'>
+				<h3>没有了</h3>
+			</div>
+		</div>
 	</div>
 
-	
+
 	<script src="script/main.js"></script>
 </body>
 
