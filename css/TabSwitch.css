@@ -16,7 +16,7 @@ body {
 	border-radius: 10px;
 /* 	box-shadow: 4px 3px 10px 1px rgba(85, 135, 135, 0.4),
 				5px 4px 10px 1px rgba(82, 77, 135, 0.4); */
-	box-shadow: 2px 8px 20px #3598ac;
+	box-shadow: 2px 6px 30px #3598ac;
 	
 
 	display: flex;
@@ -39,6 +39,7 @@ body {
 	margin-left: 6px;
 	display: flex;
 	flex-direction: column;
+	user-select: none;
 }
 .left h1 {
 	margin: 15px 4px;

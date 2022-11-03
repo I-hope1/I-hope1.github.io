@@ -7,18 +7,18 @@ const app = createApp({
 		return {}
 	}
 })
-app.component('card',{
+app.component('card', {
 	props: ['realname', 'nickname', 'weapons', 'force', 'ranking', 'content', 'ending', 'character', 'plots'],
   // 组件的实现
 	template: `
  <div class="card">
  		<h1>{{ realname }}</h1>
- 		<div><b>绰号：{{ nickname }}</b><b>武器：{{ weapons }}</b></div>
-	 	<div><b>武力值：{{ force }}</b><b>梁山排名：{{ ranking }}</b></div>
-	 	<div><b>内容：<pre>{{ content.replace(/\\\\n/g, '\\n') }}</pre>
-	 	<div><b>结局：{{ ending }}</b></div>
-	 	<div><b>性格特点：{{ character }}</b></div>
-	 	<div><b>相关情节：{{ plots }}</b></div>
+ 		<div><b>绰号：</b>{{ nickname }}<b>武器：</b>{{ weapons }}</div>
+	 	<div><b>武力值：</b>{{ force }}<b>梁山排名：</b>{{ ranking }}</div>
+	 	<div><b>内容：</b><pre>{{ content }}</pre></div>
+	 	<div><b>结局：</b>{{ ending }}</div>
+	 	<div><b>性格特点：</b>{{ character }}</div>
+	 	<div><b>相关情节：</b>{{ plots }}</div>
 	 	
  	</div>
  `
@@ -28,7 +28,7 @@ app.mount(".main")
 
 let style = document.createElement('style');
 
-style.innerHTML = Array(4).fill().map((e, i) => `input#left-tab${i}:checked~.content .cont${i} {
+style.innerHTML = Array(document.querySelector("body > div > div.left").children.length).fill().map((e, i) => `input#left-tab${i}:checked~.content .cont${i} {
 	display: block;
 	animation: fadeIn .3s;
 }
