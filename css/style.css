@@ -8,14 +8,19 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+}
+.tip {
+	margin-bottom: 10px;
+	font-size: 10px;
 }
 
 .card {
 	margin: 20px 10px;
-	
+
 	color: white;
-/* 	background: rgba(1, 1, 1, 0.2); */
-/* 	border: #84cdd7 solid 2px; */
+	/* 	background: rgba(1, 1, 1, 0.2); */
+	/* 	border: #84cdd7 solid 2px; */
 	border-radius: 10px;
 }
 /* .card:hover {
@@ -29,7 +34,7 @@ h1 {
 .card > div b:first-child {
 	margin-left: 10px;
 }
-.card > div b:nth-child(n+2) {
+.card > div b:nth-child(n + 2) {
 	margin-left: 30px;
 }
 
